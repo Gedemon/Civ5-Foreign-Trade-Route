@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 4/15/2012 5:24:22 PM -->
+<GameData>
+	<!-- English -->
+	<Language_en_US>
+
+		<!-- +++++++++++++++++++++++++++++++++ -->
+		
+		<Row Tag="TXT_KEY_EO_INCOME_FOREIGN_TRADE_DETAILS">
+			<Text>[ICON_PLUS] Trade Routes</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EO_INCOME_FOREIGN_TRADE_DETAILS_COLLAPSE">
+			<Text>[ICON_MINUS] Trade Routes</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EO_FOREIGN_INCOME">
+			<Text>Open Border Income</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TP_GOLD_FROM_FOREIGN_TRADE_ROUTE">
+			<Text>{1_Num} from [ICON_TRADE_WHITE] Trade Routes with other Civilizations.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_SPECIFIC_DIPLO_STRING_1">
+			<Text>You're sharing open borders with them.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_SPECIFIC_DIPLO_STRING_2">
+			<Text>You're sharing open borders with their enemies.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_FOREIGN_TRADE_ROUTE_INCOME_INFO">
+			<Text>{1_Num} base [ICON_GOLD] Gold per route.[NEWLINE]{2_Num} [ICON_GOLD] Gold per [ICON_CITIZEN] Citizen in foreign city.[NEWLINE]{3_Num} [ICON_GOLD] Gold per [ICON_CITIZEN] Citizen in own city.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_FOREIGN_TRADE_ROUTE_CITY_INFO">
+			<Text>Route to {1_Name}. ({2_Num} % ratio)</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_FOREIGN_TRADE_ROUTE_CITY_DETAIL">
+			<Text>[NEWLINE]{1_Num} base [ICON_GOLD] Gold per route.[NEWLINE]{2_Num} [ICON_GOLD] Gold from {3_Num} [ICON_CITIZEN] Citizen in {4_Name}.[NEWLINE]{5_Num} [ICON_GOLD] Gold from {6_Num} [ICON_CITIZEN] Citizen in {7_Name}.</Text>
+		</Row>
+
+		<Update>
+			<Where Tag="TXT_KEY_EO_INCOME"/>
+			<Set>
+				<Text>Income</Text>
+			</Set>
+		</Update>
+
+		<Update>
+			<Where Tag="TXT_KEY_EO_INCOME_TRADE_DETAILS_COLLAPSE"/>
+			<Set>
+				<Text>[ICON_MINUS] Trade Routes</Text>
+			</Set>
+		</Update>
+		
+		<Update>
+			<Where Tag="TXT_KEY_EO_INCOME_TRADE_DETAILS"/>
+			<Set>
+				<Text>[ICON_PLUS] Trade Routes</Text>
+			</Set>
+		</Update>
+
+	</Language_en_US>
+	<!-- German -->
+	<Language_DE_DE>
+	</Language_DE_DE>
+	<!-- Spanish -->
+	<Language_ES_ES>
+	</Language_ES_ES>
+	<!-- French -->
+	<Language_FR_FR>
+	</Language_FR_FR>
+	<!-- Italian -->
+	<Language_IT_IT>
+	</Language_IT_IT>
+	<!-- Chinese -->
+	<Language_zh_CN>
+
+		<!-- +++++++++++++++++++++++++++++++++ -->
+
+		<Row Tag="TXT_KEY_EO_INCOME_FOREIGN_TRADE_DETAILS">
+			<Text>[ICON_PLUS]商路</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EO_INCOME_FOREIGN_TRADE_DETAILS_COLLAPSE">
+			<Text>[ICON_MINUS]商路</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EO_FOREIGN_INCOME">
+			<Text>边境开放收入</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TP_GOLD_FROM_FOREIGN_TRADE_ROUTE">
+			<Text>{1_Num}来自连接其他文明的[ICON_TRADE_WHITE]商路收益</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_SPECIFIC_DIPLO_STRING_1">
+			<Text>你与他们正分享开放边境。</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_SPECIFIC_DIPLO_STRING_2">
+			<Text>你与他们的敌人正分享开放边境。</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_FOREIGN_TRADE_ROUTE_INCOME_INFO">
+			<Text>每条商路{1_Num}[ICON_GOLD]金钱。[NEWLINE]国外城市每[ICON_CITIZEN]市民提供{2_Num}[ICON_GOLD]金钱。[NEWLINE]国内城市每[ICON_CITIZEN]市民提供{3_Num}[ICON_GOLD]金钱。</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_FOREIGN_TRADE_ROUTE_CITY_INFO">
+			<Text>商路至{1_Name}。({2_Num}%比率)</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_FOREIGN_TRADE_ROUTE_CITY_DETAIL">
+			<Text>[NEWLINE]每条商路{1_Num}[ICON_GOLD]金钱。[NEWLINE]来自{4_Name}的{3_Num}[ICON_CITIZEN]市民提供{2_Num}[ICON_GOLD]金钱。[NEWLINE]来自{7_Name}的{6_Num}[ICON_CITIZEN]市民提供{5_Num}[ICON_GOLD]金钱。</Text>
+		</Row>
+
+		<Update>
+			<Where Tag="TXT_KEY_EO_INCOME"/>
+			<Set>
+				<Text>收入</Text>
+			</Set>
+		</Update>
+
+		<Update>
+			<Where Tag="TXT_KEY_EO_INCOME_TRADE_DETAILS_COLLAPSE"/>
+			<Set>
+				<Text>[ICON_MINUS]商路</Text>
+			</Set>
+		</Update>
+
+		<Update>
+			<Where Tag="TXT_KEY_EO_INCOME_TRADE_DETAILS"/>
+			<Set>
+				<Text>[ICON_PLUS]商路</Text>
+			</Set>
+		</Update>
+
+	</Language_zh_CN>
+
+</GameData>

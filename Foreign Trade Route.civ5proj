@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Deploy" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <ProjectGuid>{27593208-d6fb-46ac-9850-a5b2b68e0abf}</ProjectGuid>
+    <Name>Foreign Trade Routes</Name>
+    <Guid>740d3b2c-7db0-4817-a385-b3c1852bbbbb</Guid>
+    <ModVersion>7</ModVersion>
+    <Stability>Alpha</Stability>
+    <Teaser>Foreign [ICON_TRADE_WHITE] Trade Routes</Teaser>
+    <Description>Foreign [ICON_TRADE_WHITE] Trade Routes allows one trade routes per city with another civilization's city if they are connected by road, river, coast or ocean and you have an open border agreement (or at least friendly relation for a city-state trade route) , and corresponding technology or building (Lighthouse, Harbor) for maritime trade route.</Description>
+    <Authors>Gedemon</Authors>
+    <SpecialThanks>Whys, Onni, whoward69</SpecialThanks>
+    <Categories>$Categories$</Categories>
+    <AffectsSavedGames>false</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsMac>true</SupportsMac>
+    <AssemblyName>Foreign Trade Route</AssemblyName>
+    <RootNamespace>Foreign Trade Route</RootNamespace>
+    <ModContent>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>ShareData</Name>
+        <Description>ShareData</Description>
+        <FileName>Lua/ForeignTradeMain.lua</FileName>
+      </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>ShareData</Name>
+        <Description>ShareData</Description>
+        <FileName>Lua/ShareData.lua</FileName>
+      </Content>
+    </ModContent>
+    <ModActions>
+      <Action xmlns="">
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>XML/Texts.xml</FileName>
+      </Action>
+    </ModActions>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <ModProperties>
+      <Property>
+        <Name>_DisableLoadGameOption</Name>
+        <Description>1</Description>
+      </Property>
+    </ModProperties>
+    <ModReferences />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Package Only' ">
+    <PackageMod>true</PackageMod>
+    <DeployMod>false</DeployMod>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Deploy Only' ">
+    <PackageMod>false</PackageMod>
+    <DeployMod>true</DeployMod>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Lua\ForeignTradeDebug.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Lua\ForeignTradeDefines.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Lua\ForeignTradeFunctions.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Lua\ForeignTradeUtils.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Lua\ForeignTradeMain.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Lua\ForeignTradeUIFunctions.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Lua\ForeignTradeConnections.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Lua\SaveUtils.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Lua\ShareData.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="readme.txt">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="UI\ForeignTradeMain.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="XML\Texts.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Lua" />
+    <Folder Include="UI" />
+    <Folder Include="XML" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />
+</Project>
